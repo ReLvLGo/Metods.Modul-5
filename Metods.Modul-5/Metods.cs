@@ -1,42 +1,67 @@
 ﻿using System;
-using System.Net.Mail;
+using System.Drawing;
+
 
 class Mainclass
 {
-    static void Main()
+    static string ShowColor()
+
     {
-        static int[] GetArrayFromConsole()
+
+        
+        var favcolor = new string[3];
+
+        for (int i = 0; i < favcolor.Length; i++)
         {
-
-            var result = new int[5];
-
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                Console.WriteLine("Введите элемент массива номер {0}", i + 1);
-                result[i] = int.Parse(Console.ReadLine());
-            }
-
-            int temp = 0;
-
-            for (int i = 0; i < result.Length; i++)
-
-                for (int j = i + 1; j < result.Length; j++)
-                    if (result[i] > result[j])
-                    {
-                        temp = result[i];
-                        result[i] = result[j];
-                        result[j] = temp;
-                    }
-            for (int i = 0; i < result.Length; i++)
-            {
-                Console.WriteLine(result[i]);
-            }
-
-            return result;
-
-
-
+            favcolor[i] = ShowColor();
         }
+       
+        
+            Console.WriteLine("Ваши любимые цвета: ");
+        var temp = Console.ReadLine();
+
+        switch (temp)
+        {
+            case "red":
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is red!");
+                break;
+
+            case "green":
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is green!");
+                break;
+            case "cyan":
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is cyan!");
+                break;
+            default:
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine("Your color is yellow!");
+                break;
+        }
+
+
+
+        foreach (var color in favcolor)
+            {
+
+                Console.WriteLine(color);
+
+            }
+        return ShowColor();
+
     }
-}
+
+    }
+        
+    
+
