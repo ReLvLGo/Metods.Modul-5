@@ -5,20 +5,22 @@ using System.Drawing;
 class Mainclass
 {
 
-    static void Main(string[] args) { 
-   
-    static string ShowColor()
-
+    static void Main(string[] args)
     {
-        Console.WriteLine("Напишите ваши любимые цвета");
-        return Console.ReadLine();
-    }
+
+
+        static void ShowColor(params string[] favcolor)
+
+        {
+            Console.WriteLine("Напишите ваши любимые цвета");
+             Console.ReadLine();
+        }
 
         var favcolor = new string[3];
 
         for (int i = 0; i < favcolor.Length; i++)
         {
-            favcolor[i] = ShowColor();
+            ShowColor(favcolor[0], favcolor[2]);
 
         }
 
@@ -59,8 +61,8 @@ class Mainclass
             Console.WriteLine(colors);
 
         }
-        
+       
 
     }
-
 }
+

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metods", "Metods.Modul-5\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parametrs.Metods", "parametrs.Metods\parametrs.Metods.csproj", "{7C61B12F-F486-4FF4-816B-D2CA53CD32C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metods.5.2.8", "Metods.5.2.8\Metods.5.2.8.csproj", "{E24ECDE8-E2FB-43A9-A827-981236698629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.14", "5.2.14\5.2.14.csproj", "{97925C2C-A494-4859-8BC4-EDF9410CD2F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{7C61B12F-F486-4FF4-816B-D2CA53CD32C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C61B12F-F486-4FF4-816B-D2CA53CD32C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C61B12F-F486-4FF4-816B-D2CA53CD32C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24ECDE8-E2FB-43A9-A827-981236698629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24ECDE8-E2FB-43A9-A827-981236698629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24ECDE8-E2FB-43A9-A827-981236698629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24ECDE8-E2FB-43A9-A827-981236698629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97925C2C-A494-4859-8BC4-EDF9410CD2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97925C2C-A494-4859-8BC4-EDF9410CD2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97925C2C-A494-4859-8BC4-EDF9410CD2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97925C2C-A494-4859-8BC4-EDF9410CD2F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
